@@ -40,7 +40,7 @@ class TicketRepository:
             description=data.description,
             status=TicketStatus.open,
             created_at=now,
-            updated_at=now,
+            modified_at=now,
         )
         self._items[ticket.id] = ticket
         return ticket
@@ -53,7 +53,7 @@ class TicketRepository:
         if ticket is None:
             return None
         changes = data.model_dump(exclude_unset=True)
-        changes["updated_at"] = datetime.now(timezone.utc)
+        changes["modified_at"] = datetime.now(timezone.utc)
         ticket = ticket.model_copy(update=changes)
         self._items[ticket_id] = ticket
         return ticket
