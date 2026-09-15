@@ -870,10 +870,10 @@
             "format": "date-time",
             "title": "Created At"
           },
-          "updated_at": {
+          "modified_at": {
             "type": "string",
             "format": "date-time",
-            "title": "Updated At"
+            "title": "Modified At"
           }
         },
         "type": "object",
@@ -883,7 +883,7 @@
           "description",
           "status",
           "created_at",
-          "updated_at"
+          "modified_at"
         ],
         "title": "Ticket",
         "examples": [
@@ -891,9 +891,9 @@
             "created_at": "2026-09-15T17:30:00Z",
             "description": "Ошибка подключения после обновления клиента",
             "id": "8d45c3e2-7f1a-4c55-9a39-2b1f0e6d4a10",
+            "modified_at": "2026-09-15T17:30:00Z",
             "status": "open",
-            "title": "Не работает VPN",
-            "updated_at": "2026-09-15T17:30:00Z"
+            "title": "Не работает VPN"
           }
         ]
       },

@@ -59,7 +59,7 @@ class Ticket(BaseModel):
                     "description": "Ошибка подключения после обновления клиента",
                     "status": "open",
                     "created_at": "2026-09-15T17:30:00Z",
-                    "updated_at": "2026-09-15T17:30:00Z",
+                    "modified_at": "2026-09-15T17:30:00Z",
                 }
             ]
         }
@@ -70,7 +70,7 @@ class Ticket(BaseModel):
     description: str
     status: TicketStatus
     created_at: datetime
-    updated_at: datetime
+    modified_at: datetime
 
 
 class TicketPage(BaseModel):
